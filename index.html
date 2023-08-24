@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+  <body>
+    <div class="container">
+      <div class="product">
+        <div class="product-card">
+          <h2 class="name">Nike Shoe</h2>
+          <span class="price">$120.00</span>
+          <a class="popup-btn">Quick View</a>
+          <img src="1.png" class="product-img" alt="" />
+        </div>
+        <div class="popup-view">
+          <div class="popup-card">
+            <a><i class="fas fa-times close-btn"></i></a>
+            <div class="product-img">
+              <img src="1.png" alt="" />
+            </div>
+            <div class="info">
+              <h2>Nike Shoe <br /><span>Mens's Sport</span></h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                eum nesciunt aperiam incidunt maxime consequuntur totam illum
+                illo assumenda error. Ipsum dolore, quae fuga quibusdam a eaque
+                quia quam.
+              </p>
+              <span class="price">$120.00</span>
+              <a href="#" class="add-card-btn">Add to card</a>
+              <a href="#" class="add-wish">Add to Wishlist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-card">
+          <h2 class="name">Nike Shoe</h2>
+          <span class="price">$120.00</span>
+          <a class="popup-btn">Quick View</a>
+          <img src="2.png" class="product-img" alt="" />
+        </div>
+        <div class="popup-view">
+          <div class="popup-card">
+            <a><i class="fas fa-times close-btn"></i></a>
+            <div class="product-img">
+              <img src="2.png" alt="" />
+            </div>
+            <div class="info">
+              <h2>Nike Shoe <br /><span>Mens's Sport</span></h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                eum nesciunt aperiam incidunt maxime consequuntur totam illum
+                illo assumenda error. Ipsum dolore, quae fuga quibusdam a eaque
+                quia quam.
+              </p>
+              <span class="price">$120.00</span>
+              <a href="#" class="add-card-btn">Add to card</a>
+              <a href="#" class="add-wish">Add to Wishlist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-card">
+          <h2 class="name">Nike Shoe</h2>
+          <span class="price">$120.00</span>
+          <a class="popup-btn">Quick View</a>
+          <img src="1.png" class="product-img" alt="" />
+        </div>
+        <div class="popup-view">
+          <div class="popup-card">
+            <a><i class="fas fa-times close-btn"></i></a>
+            <div class="product-img">
+              <img src="1.png" alt="" />
+            </div>
+            <div class="info">
+              <h2>Nike Shoe <br /><span>Mens's Sport</span></h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                eum nesciunt aperiam incidunt maxime consequuntur totam illum
+                illo assumenda error. Ipsum dolore, quae fuga quibusdam a eaque
+                quia quam.
+              </p>
+              <span class="price">$120.00</span>
+              <a href="#" class="add-card-btn">Add to card</a>
+              <a href="#" class="add-wish">Add to Wishlist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var popupViews = document.querySelectorAll(".popup-view");
+    var popupBtns = document.querySelectorAll(".popup-btn");
+    var closeBtns = document.querySelectorAll(".close-btn");
+    popupBtns.forEach((popupBtn, i) => {
+      popupBtn.addEventListener("click", () => {
+        popupViews[i].classList.add("active");
+      });
+    });
+    closeBtns.forEach((closeBtn, i) => {
+      closeBtn.addEventListener("click", () => {
+        popupViews[i].classList.remove("active");
+      });
+    });
+  </script>
+</html>
